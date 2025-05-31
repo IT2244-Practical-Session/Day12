@@ -1,113 +1,58 @@
 # Day12
 
-C Programming Basics — Sample Codes and Explanations
-This repository contains simple C programs demonstrating fundamental concepts like printing output, variables, data types, user input, and basic operators.
+# C Programming Basics - Summary of Example Codes
 
-1. Hello World!
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    printf("Hello World!");
-    return 0;
-}
-Output:
+This repository contains simple C programs designed to demonstrate fundamental concepts for beginners in C programming. The examples cover basic input/output, variables, data types, arithmetic operations, and control structures.
 
-nginx
-Copy
-Edit
-Hello World!
-2. Print Age (Variable Declaration & Output)
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    int age = 25;
-    printf("%d", age);
-    return 0;
-}
-Output:
+---
 
-Copy
-Edit
-25
-3. Assigning and Reassigning Variable Values
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    int age = 25;
-    printf("%d", age);
-    printf("\nc programming");
-    age = 31;
-    printf("\nNew age: %d", age);
-    return 0;
-}
-Output:
+## Summary of Programs
 
-r
-Copy
-Edit
-25
-c programming
-New age: 31
-4. Copying Variable Values
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    int num1 = 25;
-    int num2 = num1;
-    printf("First Number: %d\n", num1);
-    printf("Second Number: %d\n", num2);
-    return 0;
-}
-Output:
+### 1. Hello World
+- Prints the classic message: `"Hello World!"`
+- Demonstrates basic `printf` usage.
 
-mathematica
-Copy
-Edit
-First Number: 25
-Second Number: 25
-5. Declare Multiple Variables
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    int num1, num2 = 25;
-    printf("First Number: %d\n", num1);
-    printf("Second Number: %d\n", num2);
-    return 0;
-}
-Note: Uninitialized variables like num1 may contain garbage values.
+### 2. Print Age
+- Declares an integer variable `age`.
+- Prints the value of the variable using `%d` format specifier.
 
-6. Variable Naming Rules
-Cannot contain spaces.
+### 3. Variable Assignment & Reassignment
+- Shows how to assign a value to a variable.
+- Demonstrates changing the variable value and printing updated values.
 
-Cannot start with numbers.
+### 4. Copying Variables
+- Assigns one variable’s value to another.
+- Prints both to show they hold the same value.
 
-Must use valid characters (letters, numbers, underscores).
+### 5. Multiple Variable Declarations
+- Declares multiple variables in a single line.
+- Highlights that uninitialized variables may contain garbage values.
 
-7. Using sizeof() to Find Variable Size
-c
-Copy
-Edit
-#include <stdio.h>
-int main() {
-    int age = 10;
-    printf("%d\n", age);
-    printf("Size: %zu bytes\n", sizeof(age));
-    return 0;
-}
-Output:
+### 6. Variable Naming Rules
+- Explains constraints like no spaces or starting with numbers.
 
-makefile
-Copy
-Edit
-10
-Size: 4 bytes
+### 7. Using `sizeof()`
+- Prints the size (in bytes) of an integer variable using `sizeof`.
+
+### 8. Data Types & Format Specifiers
+- Demonstrates usage of `int`, `double`, `float`, and `char`.
+- Shows how to format output with precision control for floats and doubles.
+
+### 9. User Input
+- Uses `scanf()` to get user inputs for various data types.
+- Prints the received inputs back to the user.
+
+### 10. Comments in C
+- Single-line (`//`) and multi-line (`/* ... */`) comments explained.
+
+### 11. Arithmetic Operators
+- Lists common arithmetic operators: `+`, `-`, `*`, `/`, `%`.
+
+---
+
+## How to Compile & Run Programs
+
+1. Compile the code using GCC:
+   ```bash
+   gcc filename.c -o outputname
+
